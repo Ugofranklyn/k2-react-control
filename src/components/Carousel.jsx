@@ -35,7 +35,7 @@ export default class Carousel extends React.Component {
     const childImages = this.state.imageData.map(function(element) {
       return (
         <div>
-          <img src={element["FileProperty@odata.mediaReadLink"]} />
+          <img src={element["Image@odata.mediaReadLink"]} />
           <p className="legend">{element.Name}</p>
         </div>
       );
